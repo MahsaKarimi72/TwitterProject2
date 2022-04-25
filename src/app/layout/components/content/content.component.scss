@@ -1,0 +1,17 @@
+@import "../../../styles/main.scss";
+
+.content {
+  color: $smoke-white-color;
+}
+
+.sticky-content {
+  position: sticky !important;
+  top: 0;
+  align-self: flex-start;
+}
+.sticky-menue {
+  position: sticky !important;
+  bottom: 0;
+  align-self: flex-start;
+  padding: 0;
+}

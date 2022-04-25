@@ -1,0 +1,46 @@
+@import "../../../../app/styles/main.scss";
+
+.header {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.twitter-icon {
+  color: $blue-color;
+  font-size: 30px;
+  margin: 14px 0px 16px 24px;
+}
+.card-view {
+  position: absolute;
+  top: 25%;
+  left: 70px;
+  border: 1px;
+  border-radius: 10px;
+  height: 30px;
+  width: 200px;
+  background-color: $accent-color;
+}
+
+.small-text {
+  font-size: 14px !important;
+  color: $gray-color;
+  background: $accent-color;
+  padding: 2px 8px;
+}
+
+.menue {
+  position: absolute;
+  top: 30%;
+  right: 1%;
+}
+.notification {
+  position: absolute;
+  top: 30%;
+  right: 4%;
+}
+.message {
+  position: absolute;
+  top: 30%;
+  right: 7.5%;
+}

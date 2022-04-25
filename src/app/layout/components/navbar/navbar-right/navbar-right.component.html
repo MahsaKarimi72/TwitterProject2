@@ -1,0 +1,23 @@
+<div class="nav">
+  <div class="card-view">
+    <div class="mb-3">Trend for You</div>
+    <!-- list -->
+    <ul>
+      <li *ngFor="let item of list" class="suggestion-card">
+        <div class="small-text">
+          {{ item.UserName }}
+        </div>
+        <div class="x-small-text">
+          {{ item.FollowingNumber + " following" }}
+        </div>
+      </li>
+    </ul>
+    <!-- end of list -->
+    <div
+      class="show-more-text small-text text-primary"
+      (click)="showToast('Show more')"
+    >
+      show more
+    </div>
+  </div>
+</div>

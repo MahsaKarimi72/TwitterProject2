@@ -1,0 +1,19 @@
+<div class="header">
+  <div>
+    <div>
+      <i class="fa fa-twitter twitter-icon"></i>
+    </div>
+
+    <input class="card-view small-text" type="text" [(ngModel)]="search" />
+
+    <div class="menue" (click)="showToast('Menue button')">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div class="notification" (click)="showToast('Notification button')">
+      <i class="fa fa-bell"></i>
+    </div>
+    <div class="message" (click)="showToast('Message button')">
+      <i class="fa fa-envelope"></i>
+    </div>
+  </div>
+</div>

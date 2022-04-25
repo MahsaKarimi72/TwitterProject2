@@ -1,0 +1,87 @@
+<ul>
+  <li *ngFor="let item of list">
+    <div class="d-flex">
+      <!-- post creator image -->
+      <div style="margin-right: 8px">
+        <img
+          src="../../../assets/images/elon-musk.jpg"
+          class="rounded-circle"
+          alt="Cinque Terre"
+          width="50"
+          height="50"
+        />
+      </div>
+
+      <!-- post content -->
+      <div>
+        <p class="creator-name">{{ item.CreatorName }}</p>
+        <p class="gray-small-text">{{ item.CreateTime }}</p>
+
+        <p class="contet-post">
+          {{ item.PostContent }}
+        </p>
+        <img
+          class="rounded contet-post"
+          *ngIf="item.PosttType == 2"
+          src="../../../assets/images/android-developer.png"
+        />
+
+        <!-- post icons in lg & md screen-->
+        <div class="d-flex post-icons view-icons">
+          <div class="circle-img pink-color">
+            <i class="fa fa-heart"></i>
+          </div>
+          <div class="circle-img green-color">
+            <i class="fa fa-commenting"></i>
+          </div>
+          <div class="circle-img blue-color">
+            <i class="fa fa-share-alt"></i>
+          </div>
+          <div class="gray-small-text m-1">{{ item.LikeNumbers }} like</div>
+
+          <div class="gray-small-text right-text">
+            {{ item.LikeNumbers }} comments
+          </div>
+        </div>
+
+        <!-- post icons in sm screen-->
+        <div class="d-flex post-icons view-icons-sm">
+          <div class="gray-small-text">
+            <i class="fa fa-heart"></i>
+            {{ item.LikeNumbers }}
+          </div>
+
+          <div class="gray-small-text m-2">
+            <i class="fa fa-commenting"></i>
+            {{ item.LikeNumbers }}
+          </div>
+        </div>
+
+        <!-- post footer -->
+        <div class="row post-footer">
+          <div
+            class="col-sm-12 col-md-3 col-lg-3 card-view"
+            (click)="showToast('Like button')"
+          >
+            <i class="fa fa-heart"></i>
+            like
+          </div>
+          <div
+            class="col-sm-12 col-md-3 col-lg-3 card-view"
+            (click)="showToast('Comment button')"
+          >
+            <i class="fa fa-commenting"></i>
+            comment
+          </div>
+          <div
+            class="col-sm-12 col-md-3 col-lg-3 card-view"
+            (click)="showToast('Share button')"
+          >
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+            share
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>

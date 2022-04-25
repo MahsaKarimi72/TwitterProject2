@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./app/styles/main.scss";
+
+body {
+  height: 100%;
+  color: whitesmoke;
+  background-color: $primary-color !important;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  direction: ltr;
+}

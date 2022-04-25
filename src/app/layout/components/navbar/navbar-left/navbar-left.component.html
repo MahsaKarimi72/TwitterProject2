@@ -1,0 +1,50 @@
+<div class="nav">
+  <!--  profile -->
+  <div class="card-view">
+    <!-- backgeround img -->
+    <img
+      src="../../../../../assets/images/green-backgeround.jpg"
+      class="card-view-top-curve"
+    />
+    <!-- profile img -->
+    <div class="img-profile">
+      <img
+        src="../../../assets/images/elon-musk.jpg"
+        class="rounded-circle"
+        alt="Cinque Terre"
+        width="50"
+        height="50"
+      />
+    </div>
+    <!-- user info -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 small-text">
+        {{ model.FirstName + " " + model.LastName }}
+      </div>
+      <div
+        class="col-xs-12 col-sm-12 col-md-12 col-lg-12 small-text gray-collor"
+      >
+        {{ "@" + model.UserName }}
+      </div>
+      <div class="hidden-md col-lg-12 small-text">
+        {{ model.Bio }}
+      </div>
+    </div>
+    <!-- end of row -->
+
+    <div class="row follow-card">
+      <div class="hidden-md col-lg-6 x-small-text">
+        {{ model.FollowerNumber }}
+        <div class="gray-collor">followers</div>
+      </div>
+      <div class="hidden-md col-lg-6 x-small-text">
+        {{ model.FollowerNumber }}
+        <div class="gray-collor">following</div>
+      </div>
+    </div>
+    <div class="small-text blue-color"     (click)="showToast('My profile button')">My Profile</div>
+    <!-- end of row -->
+  </div>
+  <!-- followig list -->
+  <div class="card-view p-2" style="min-height: 45%">Who is to follow you</div>
+</div>

@@ -1,0 +1,20 @@
+<div class="content">
+  <app-header class="d-none d-lg-block"></app-header>
+
+  <div class="row m-0 p-0">
+    <!-- left navbar -->
+    <div class="d-none d-lg-block col-lg-2 sticky-content p-1">
+      <app-navbar-left></app-navbar-left>
+    </div>
+    <!-- content -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 p-1">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- footer menu -->
+    <div class="d-block d-lg-none sticky-menue"><app-footer></app-footer></div>
+    <!-- right navbar -->
+    <div class="d-none d-lg-block col-lg-2 sticky-content p-1">
+      <app-navbar-right></app-navbar-right>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+@import "../../../../app/styles/main.scss";
+ul {
+  background-color: $primary-light-color;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+
+  a {
+    color: $smoke-white-color;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../../../styles/main.scss";
+
+.nav {
+  height: 80vh;
+  max-height: 80vh;
+  position: relative;
+}
+.card-view {
+  width: 100%;
+  background-color: $accent-color;
+  border: 1px;
+  border-radius: 10px;
+  margin: 0 8px 0px 0px;
+  padding: 8px;
+}
+
+.card-view-bottom {
+  margin: 20px 8px 8px 8px;
+  border: solid $lightest-gray-color;
+  border-width: 1px 0px;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.small-text {
+  font-size: 14px !important;
+  margin: 2px 0px;
+}
+
+.x-small-text {
+  font-size: 12px !important;
+  margin: 0px;
+  color: $gray-color;
+}
+
+.suggestion-card {
+  border: solid $lightest-gray-color;
+  border-width: 0px 0px 1px 0px;
+  padding: 5px;
+}
+
+.show-more-text {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  cursor: pointer;
+}
